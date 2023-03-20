@@ -31,6 +31,7 @@
 
 정보 조회 페이지.
 - 여기서 정보를 조회하고, 해당 계정에 정보가 없으면, 정보 입력 페이지로 넘어갑니다.
+- 칼라별 의미는 아래 설명 참고
 
 ![enter image description here](https://user-images.githubusercontent.com/102447800/226276914-50c182b0-49b3-4a79-97c9-629fb2113943.gif)
 
@@ -73,7 +74,7 @@
 ![enter image description here](https://user-images.githubusercontent.com/102447800/226270293-b169df08-6e28-4cae-abe4-5ba7b1bb1726.png)
 
 
-
+<br>
 
 ## 연락처 정보
 
