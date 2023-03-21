@@ -37,9 +37,9 @@ async function deleteData(){
 
   } else{
     changeCircle.style.backgroundColor = "red";
-    changeCircle.innerText = "error";
-    infoOutput.innerHTML = "HTTP error" + response.status;
-    console.error("catch error : ", response.status);
+    changeCircle.innerText = "connect error";
+    infoOutput.innerHTML = error;
+    console.error("catch error : ", error);
   }
 }
 
@@ -77,10 +77,7 @@ async function saveData(event) {
 
     //응답이 정상적으로 완료되면
     if (response.ok) {
-      //   infoOutput.innerHTML = JSON.stringify(data);
-
       infoOutput.innerHTML = "new_info : " + infoValue;
-
       console.log("response : ", data.status);
 
       // 버튼 색 바뀌기
@@ -95,7 +92,7 @@ async function saveData(event) {
     // 응답이 정상이 아닐 경우,
     // 버튼 색 바뀌기
     changeCircle.style.backgroundColor = "red";
-    changeCircle.innerText = "wrong input";
+    changeCircle.innerText = "connect error";
     infoOutput.innerHTML = error;
     console.error("catch error : ", error);
   }
