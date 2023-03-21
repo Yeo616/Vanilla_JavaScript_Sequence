@@ -10,7 +10,7 @@ const infoOutput = document.getElementById("infoOutput");
 const deleteDiv = document.getElementById("buttonDiv");
 const deleteBtn = document.getElementById("deleteBtn");
 deleteBtn.addEventListener("click",deleteData)
-deleteBtn.style.display = "none";
+deleteDiv.style.display = "none";
 const inputInfoDiv = document.getElementById("inputInfoDiv");
 
 async function deleteData(){
@@ -29,10 +29,12 @@ async function deleteData(){
     const data = await response.json();
     infoOutput.innerHTML = JSON.stringify(data.status);
     console.log("response : ", data.status);
-
+    
     // 버튼 색 바뀌기
     changeCircle.style.backgroundColor = "green";
     changeCircle.innerText = "delete successfully";
+    deleteDiv.style.display = "none";
+
   } else{
     changeCircle.style.backgroundColor = "red";
     changeCircle.innerText = "error";
@@ -86,7 +88,7 @@ async function saveData(event) {
       changeCircle.innerText = "success";
 
       // 삭제버튼 출현
-      deleteBtn.style.display = "block"
+      deleteDiv.style.display = "block"
 
     }
   } catch (error) {
