@@ -47,7 +47,7 @@
 - 조회 페이지(index.html)에서 입력한 메일을 local Storage에 저장하여, 불러왔습니다. 
 - 데이터를 입력하면, 최신 데이터로 추가/수정이 됩니다. 
 - 데이터가 추가/수정이 되면, 데이터를 삭제할 수 있는 버튼이 나타납니다.
-- 해당 필드를 DB에서 지울 수 있습니다.
+- 삭제 버튼을 클릭하면, 해당 필드를 DB에서 지울 수 있습니다.
 ![enter image description here](https://user-images.githubusercontent.com/102447800/226516752-c9f67c3d-d6da-4622-a221-670e490d5f00.gif)
 
 <br>
