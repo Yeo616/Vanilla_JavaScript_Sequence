@@ -7,6 +7,8 @@ const infoInput = document.getElementById("infoInput");
 const changeCircle = document.getElementById("progressInfo");
 const infoOutput = document.getElementById("infoOutput");
 
+const deleteBtn = document.getElementById("buttonDiv")
+
 async function saveData(event) {
   // 폼 제출에 의한 페이지 새로고침 방지
   event.preventDefault();
@@ -48,6 +50,10 @@ async function saveData(event) {
       // 버튼 색 바뀌기
       changeCircle.style.backgroundColor = "green";
       changeCircle.innerText = "success";
+
+      // 삭제버튼 출현
+      deleteBtn.style.display = "block"
+
     }
   } catch (error) {
     // 응답이 정상이 아닐 경우,
