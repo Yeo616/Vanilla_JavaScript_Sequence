@@ -63,9 +63,6 @@ async function loadData(event) {
                 // 데이터가 없으면, 입력페이지로 전환 시키기
                 turnPage.style.display = "block";
                 pageLink.innerText = "정보 수정하기";
-                
-
-        // 해당 데이터가 있는지 확인되면, 보여지는 동그라이 색이 변함
       }
     } else {
       // 입력페이지는 보이지 않아아야함.
