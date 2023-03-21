@@ -1,3 +1,4 @@
+
 # 순수 자바스크립트 상태관리
 
 - 순수 자바스크립트로 만든 상태 관리 시퀀스입니다.  
@@ -45,15 +46,32 @@
 - 해당 계정에 데이터가 없을 경우에 넘어올 수 있는 페이지입니다.
 - 조회 페이지(index.html)에서 입력한 메일을 local Storage에 저장하여, 불러왔습니다. 
 - 데이터를 입력하면, 최신 데이터로 추가/수정이 됩니다. 
-![enter image description here](https://user-images.githubusercontent.com/102447800/226277315-12155dba-c815-48d9-8dc1-f183e1fb8e80.gif)
+- 데이터가 추가/수정이 되면, 데이터를 삭제할 수 있는 버튼이 나타납니다.
+- 해당 필드를 DB에서 지울 수 있습니다.
+![enter image description here](https://user-images.githubusercontent.com/102447800/226516752-c9f67c3d-d6da-4622-a221-670e490d5f00.gif)
 
 <br>
 
 ## 칼라별 의미
 ### 녹색
-- 입력한 유저는 DB에 있고, 찾고자 하는 정보도 DB에 있음을 나타냅니다. 해당 프로젝트에서는 찾고자 하는 데이터를 phone_number로 지정하였습니다.
+- 로그인 된 이메일이 유효할 때
+
+>  입력한 유저는 DB에 있고, 찾고자 하는 정보도 DB에 있음을 나타냅니다. 해당 프로젝트에서는 찾고자 하는 데이터를 phone_number로 지정하였습니다.
 
 ![enter image description here](https://user-images.githubusercontent.com/102447800/226273953-3d4565f5-9939-42b0-833c-eee6a7b88f79.png)
+
+- 정보입력 성공했을 때
+
+> 정보를 입력하여 DB에 성공적으로 저장했을 때 나타납니다.
+> 새로 입력한 정보가 무엇인지 하단 문구에 표시됩니다.
+> 
+![enter image description here](https://user-images.githubusercontent.com/102447800/226517191-d12efde2-07e1-4f68-a94a-e4c937473a7d.png)
+
+- 정보를 삭제할 때
+
+> DB에 저장되어있는 정보를 성공적으로 삭제했을 때 나타납니다. 하단 문구에는 정보가 성공적으로 지워졌다고 표시됩니다.
+
+![enter image description here](https://user-images.githubusercontent.com/102447800/226517500-0741d9c9-ffc9-40ad-8c20-efeb8f77500a.png)
 
 ### 주황색 
 - 유저는 DB에 있으나, 찾고자 하는 정보가 없음을 표시합니다. 이때, 정보를 입력할 창으로 넘어가는 링크가 나타납니다.
