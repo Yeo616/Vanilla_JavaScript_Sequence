@@ -38,8 +38,8 @@ async function deleteData(){
   } else{
     changeCircle.style.backgroundColor = "red";
     changeCircle.innerText = "connect error";
-    infoOutput.innerHTML = error;
-    console.error("catch error : ", error);
+    infoOutput.innerHTML = "connect error";
+    console.error("catch error : ", "connect error");
   }
 }
 
